@@ -10,5 +10,6 @@ def test_google_search():
         desired_capabilities=capabilities
     )
     driver.get("http://www.google.com")
+    print ("hello")
     assert "Google" in driver.title
     driver.quit()
